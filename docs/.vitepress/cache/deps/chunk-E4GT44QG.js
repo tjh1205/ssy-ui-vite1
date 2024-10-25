@@ -1,4 +1,4 @@
-// ../../node_modules/.pnpm/vitepress@1.4.1_@algolia+client-search@4.24.0_@types+node@22.5.5_@types+react@18.3.5_axios@1._e5rnicu6hr43ypqc6nph2yqy4u/node_modules/vitepress/lib/vue-demi.mjs
+// ../../node_modules/.pnpm/vitepress@1.4.1_@algolia+client-search@4.24.0_@types+node@22.5.5_@types+react@18.3.5_axios@1._ihm4pggbbrdqh5cgq5m4kybxwm/node_modules/vitepress/lib/vue-demi.mjs
 var isVue2 = false;
 var isVue3 = true;
 var Vue2 = void 0;
@@ -38,4 +38,4 @@ vitepress/lib/vue-demi.mjs:
    * @license MIT
    *)
 */
-//# sourceMappingURL=chunk-FVWA3ZYS.js.map
+//# sourceMappingURL=chunk-E4GT44QG.js.map

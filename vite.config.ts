@@ -6,7 +6,7 @@ import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vite'
 
 const rollupOptions = {
-  external: ['vue', 'vue-router'],
+  external: ['vue'],
   output: {
     globals: {
       vue: 'Vue',
@@ -23,7 +23,9 @@ export default defineConfig({
   },
   build: {
     rollupOptions,
-    minify: false,
+    minify: 'terser',
+    sourcemap: true,
+    reportCompressedSize: true,
     cssCodeSplit: true,
     // 添加库模式配置
     lib: {

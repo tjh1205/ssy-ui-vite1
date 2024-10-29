@@ -2,7 +2,7 @@ import type { InlineConfig } from 'vite'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 // import { URL } from 'node:url'
-import * as fs from 'fs-extra'
+import fs from 'fs-extra'
 import { build } from 'vite'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))

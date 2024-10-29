@@ -1,23 +1,32 @@
-import type { PropType } from 'vue'
+import type { ExtractPropTypes, PropType } from 'vue'
 import { defineComponent } from 'vue'
-import 'uno.css'
+import 'virtual:uno.css'
 
-export type ISize = 'small' | 'medium' | 'large'
+export type ButtonSize = 'small' | 'medium' | 'large'
+export type ButtonColor =
+  | 'black'
+  | 'gray'
+  | 'red'
+  | 'yellow'
+  | 'green'
+  | 'blue'
+  | 'indigo'
+  | 'purple'
+  | 'pink'
 
-export type IColor = 'black' | 'gray' | 'red' | 'yellow' | 'green' | 'blue' | 'indigo' | 'purple' | 'pink'
-
-export const props = {
+export const buttonProps = {
   // 颜色
   color: {
-    type: String as PropType<IColor>,
+    type: String as PropType<ButtonColor>,
     default: 'blue',
   },
+
   /**
    * 尺寸
    * @example 'small' | 'medium' | 'large'
    */
   size: {
-    type: String as PropType<ISize>,
+    type: String as PropType<ButtonSize>,
     default: 'medium',
   },
 
@@ -39,9 +48,11 @@ export const props = {
   },
 } as const
 
+export type ButtonProps = ExtractPropTypes<typeof buttonProps>
+
 export default defineComponent({
-  name: 'SButton',
-  props,
+  name: 'Button',
+  props: buttonProps,
   setup(props, { slots }) {
     const size = {
       small: {
@@ -60,8 +71,11 @@ export default defineComponent({
         text: 'lg',
       },
     }
+
     return () => (
-      <button class={` mx-1
+      <button
+        class={`
+          mx-1
           hover:scale-105
           hover:text-white
           transition duration-300 ease-in-out transform
@@ -74,7 +88,8 @@ export default defineComponent({
           cursor-pointer
           border-solid
           text-${props.plain ? `${props.color}-500` : 'white'}
-          text-${size[props.size].text}`}
+          text-${size[props.size].text}
+          `}
       >
         {props.icon !== ''
           ? (

@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-<img src="https://img.shields.io/github/license/tjh1205/ssy-ui-vite1/assets/logo.png" style="width:200px;" />
+<img src="./assets/logo.png" style="width:200px;" />
 </p>
 <h1 align="center">SSY-UI-VITE</h1>
 <p align="center">

@@ -37,7 +37,8 @@
     "docs:serve": "vitepress serve docs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "dos2unix": "^1.1.2",
@@ -55,6 +56,8 @@
     "@unocss/eslint-config": "^0.63.6",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "@vitest/coverage-istanbul": "^2.1.4",
+    "@vitest/coverage-v8": "^2.1.4",
     "@vue/test-utils": "2.4.6",
     "cz-customizable": "^7.2.1",
     "eslint": "^9.13.0",
@@ -69,7 +72,7 @@
     "vite": "^5.4.9",
     "vitepress": "^1.4.1",
     "vitepress-theme-demoblock": "3.0.7",
-    "vitest": "2.1.2",
+    "vitest": "2.1.4",
     "vue-tsc": "^2.0.29"
   },
   "config": {

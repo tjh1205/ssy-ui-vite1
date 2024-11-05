@@ -11,6 +11,9 @@
 <img src="https://img.shields.io/github/license/tjh1205/ssy-ui-vite1?color=red">
 </p>
 
+<a href="https://codecov.io/gh/tjh1205/ssy-ui-vite1" >
+ <img src="https://codecov.io/gh/tjh1205/ssy-ui-vite1/graph/badge.svg?token=AXR5E5TBEZ"/>
+ </a>
 ## Features
 
 - 基于Vue框架
@@ -41,7 +44,3 @@ createApp(App)
     .use(SSYUI)
     .mount("#app");
 ```
-[![codecov](https://codecov.io/gh/tjh1205/ssy-ui-vite1/graph/badge.svg?token=AXR5E5TBEZ)](https://codecov.io/gh/tjh1205/ssy-ui-vite1)
-<a href="https://codecov.io/gh/tjh1205/ssy-ui-vite1" >
- <img src="https://codecov.io/gh/tjh1205/ssy-ui-vite1/graph/badge.svg?token=AXR5E5TBEZ"/>
- </a>

@@ -45,3 +45,5 @@ createApp(App)
   .use(SSYUI)
   .mount("#app");
 ```
+## 欢迎提PR
+一起加入项目
